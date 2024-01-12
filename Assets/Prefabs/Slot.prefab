@@ -70,7 +70,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_Sprite: {fileID: -9089910881906596142, guid: 2d52ee040726b214d9a18b6af0111e68, type: 3}
+=======
+  m_Sprite: {fileID: -4329877461594112879, guid: 587d589f0a18f3f4c93ff6371fe7e316, type: 3}
+>>>>>>> origin/master
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -124,8 +128,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SlotButtonInventory, Assembly-CSharp
+=======
+      - m_Target: {fileID: 3799789063206613723}
+        m_TargetAssemblyTypeName: SlotButton, Assembly-CSharp
+>>>>>>> origin/master
         m_MethodName: ClickOnSlot
         m_Mode: 1
         m_Arguments:
@@ -150,6 +159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   amount: 0
+<<<<<<< HEAD
+=======
+  isEmpty: 0
+>>>>>>> origin/master
   _iconObject: {fileID: 7065251006473528375}
   _amountObject: {fileID: 5009330568954869590}
 --- !u!1 &5009330568954869590
@@ -297,8 +310,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5318957306333964372}
+<<<<<<< HEAD
   m_Layer: 5
   m_Name: Script Slot Button
+=======
+  - component: {fileID: 3799789063206613723}
+  m_Layer: 5
+  m_Name: Script Slot
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,6 +342,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+=======
+--- !u!114 &3799789063206613723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6044131260757385489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67ed62b0f868f648bade7e34dcd474b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventoryButton: {fileID: 0}
+>>>>>>> origin/master
 --- !u!1 &7065251006473528375
 GameObject:
   m_ObjectHideFlags: 0

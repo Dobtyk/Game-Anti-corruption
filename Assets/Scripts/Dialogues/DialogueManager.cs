@@ -17,8 +17,11 @@ public class DialogueManager : MonoBehaviour
 
     void Awake()
     {
+<<<<<<< HEAD
         EventManager.StartedCommunication += StartCommunication;
         EventManager.EndedCommunication += EndCommunication;
+=======
+>>>>>>> origin/master
         _sentences = new Queue<(string, string)>();
     }
 
@@ -29,6 +32,7 @@ public class DialogueManager : MonoBehaviour
             DisplayNextSentence();
         }
     }
+<<<<<<< HEAD
     void StartCommunication()
     {
         IsCommunicationStart = true;
@@ -45,6 +49,20 @@ public class DialogueManager : MonoBehaviour
             _buttonEnd.SetActive(false);
             EventManager.OnPlayerInteracted(false);
         }
+=======
+    public void StartCommunication()
+    {
+        IsCommunicationStart = true;
+        _panel.SetActive(true);   
+    }
+
+    public void EndCommunication()
+    {
+        IsCommunicationStart = false;
+        _panel.SetActive(false);
+        _buttonVariant1.SetActive(false);
+        _buttonEnd.SetActive(false);
+>>>>>>> origin/master
     }
 
     public void StartDialogue(Dialogue dialogue)

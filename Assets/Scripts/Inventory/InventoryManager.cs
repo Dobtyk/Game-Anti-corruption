@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 using System.Collections.Generic;
 using System.Data;
 using Unity.VisualScripting;
+=======
+using System.Collections;
+using System.Collections.Generic;
+>>>>>>> origin/master
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+<<<<<<< HEAD
     [SerializeField] Transform _inventory;
     List<InventorySlot> _slots = new();
     static public InventorySlot activeInventorySlot;
@@ -16,6 +22,17 @@ public class InventoryManager : MonoBehaviour
         for (int i = 0; i < _inventory.childCount; i++)
         {
             _slots.Add(_inventory.GetChild(i).GetComponent<InventorySlot>());
+=======
+    public Transform inventory;
+    List<InventorySlot> _slots = new List<InventorySlot>();
+    static public InventorySlot activeInventorySlot;
+
+    void Start()
+    {
+        for (int i = 0; i < inventory.childCount; i++)
+        {
+            _slots.Add(inventory.GetChild(i).GetComponent<InventorySlot>());
+>>>>>>> origin/master
         }
     }
 
@@ -23,6 +40,7 @@ public class InventoryManager : MonoBehaviour
     {
         foreach (InventorySlot slot in _slots)
         {
+<<<<<<< HEAD
 
         }
     }
@@ -52,4 +70,9 @@ public class InventoryManager : MonoBehaviour
         }
         return false;
     }
+=======
+            
+        }
+    }
+>>>>>>> origin/master
 }

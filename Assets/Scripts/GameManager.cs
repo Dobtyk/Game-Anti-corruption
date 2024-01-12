@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
+<<<<<<< HEAD
     public static bool IsPlayerInteract;
 
     void Awake()
@@ -21,4 +22,7 @@ public class GameManager : MonoBehaviour
             IsPlayerInteract = false;
         }
     }
+=======
+
+>>>>>>> origin/master
 }
