@@ -24,5 +24,18 @@ public class PlayerMove : MonoBehaviour
         {
             transform.GetComponent<SpriteRenderer>().sprite = _playerStopping;
         }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            Quaternion rot = transform.rotation;
+            rot.y = 0;
+            transform.rotation = rot;
+        }
+
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            Quaternion rot = transform.rotation;
+            rot.y = 180;
+            transform.rotation = rot;
+        }
     }
 }
